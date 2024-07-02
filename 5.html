@@ -1,129 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
   <link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/custom.css">
+    <title>Operating System</title>
 
-  <title>Fourth semester</title>
-  <!--<link rel="icon" type="image/png" href="img/my.jpg">-->
-
+    <style>
+        .container{padding: 30px;}
+    </style>
 </head>
-
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+          <div class="container">
+    
+            <a class="navbar-brand" href="#home">
+               Operating System
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#lessons">Lessons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#questions">imp. ques</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
-      <div class="container">
-
-        <a class="navbar-brand" href="#home">
-          Fourth semester
-        </a>
-<!--
-        <a class="navbar-brand" href="#"> </a <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-    -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#subjects">Subjects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#questions">imp. qns</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <section id="subjects">
+    <section id="subjects">
+        <div class="container py-5">
+          <br>
+          <br>  
+          <div class="row">
+            <h2 class="title text-center w-100">Your subjects</h2>
+          </div>
+    
+          <hr>
+    
+    <h2>Subject: Operating System</h2>
+    <br>
+    <table border="2">
+        <tr>
+            <th><a href="/2.html" ><h3>SYALLABUS</h3></a></th>
+        </tr>
+        </tr>
+    </table>
+    <br>
+    <table border="2">
+        <tr>
+            <th><a href="/3.html" ><h3>Questions Bank</h3></a></th>
+        </tr>
+        </tr>
+    </table>
+    <br>
+    <pre>
+    <p>
+                           Tribhuwan University
+              Institute of Science and Technology B.Sc. CSIT
+    <br>
+    Course: Operating system
+    Course no: CSC264                                     Full Marks: 60+20+20
+    Semester: IV                                          Pass Marks: 24+8+8
+    Nature of course: Theory + Lab                        Credit hours: 3
+    </pre>
+    <br>
+    Course Description: This course includes the basic concepts of operating system 
+    components. It consists of process management, deadlocks and process synchronization,
+     memory management techniques, File system implementation, and I/O device management
+      principles.
+    <br>    
+    Course Objective: Describe need and role of operating system. Understand OS components 
+    such a scheduler, memory manager, file system handlers and I/O device managers. 
+    Demonstrate and simulate algorithms used in OS components
+    </p>
+    <h4>
+    COURSE CONTENTS 
+    </h4>
+   <!---- <h3>UNIT: 1</h3>
+    <iframe src="pdff/stat1.pdf" width="100%" height="500px" ></iframe>
+    </iframe>
+    --->
+<u>
+  <section id="lessons">
     <div class="container py-5">
+      <div>  
+    <a href="pdff/stat1.pdf" ><h3>Unit 1: Operating System Overview (4 Hrs.)</h3>
+    <p>
+      • 1.1 Introduction: Definition, Two views of operating system, Evolution/History of operating system, Types of OS (Mainframe, Server, Multiprocessor, PC, Real-Time, Embedded, Smart Card Operating Systems), Operating System Structures
       <br>
-      <br>  
-      <div class="row">
-        <h2 class="title text-center w-100">Your subjects</h2>
-      </div>
+      • 1.2 System Calls: Definition, Handling System Calls, System calls for Process, File, and Directory Management, System
+       Programs, The Shell, Open Source Operating Systems 
+    </p></a>
+    <br>
+    <a href="pdff/stat2.pdf" ><h3>Unit 2: Process Management (10 Hrs.)</h3>
+    <p>
+      • 2.1 Introduction: Process vs Program, Multiprogramming, Process Model, Process States, Process Control Block/Process Table.
+      <br>
+      • 2.2 Threads: Definition, Thread vs Process, Thread Usage, User and Kernel Space Threads.
+      <br>
+      • 2.3 Inter Process Communication: Definition Race Condition, Critical Section
+      <br>
+      • 2.4 Implementing Mutual Exclusion: Mutual Exclusion with Busy Waiting (Disabling Interrupts, Lock Variables, Strict Alteration, Peterson’s Solution, Test and Set Lock), Sleep and Wakeup, Semaphore, Monitors, Message Passing
+      <br>
+      • 2.5 Classical IPC problems: Producer Consumer, Sleeping Barber, and Dining Philosopher Problem
+      <br>
+      • 2.6 Process Scheduling: Goals, Batch System Scheduling (First-Come First-Served, Shortest Job First, Shortest Remaining Time Next), Interactive System Scheduling (Round-Robin Scheduling, Priority Scheduling, Multiple Queues), Overview of Real Time System Scheduling (No need to discuss any real time system scheduling algorithm)
+      <br>
+    </p></a>
+    <br>
+    <a href="pdff/stat3.pdf" ><h3>Unit 3: Regular Expressions (6 Hrs.)</h3>
+    <p>
+      • 3.1 Introduction: Definition, Deadlock Characterization, Preemptable and Non-Preemptable Resources, Resource Allocation, Necessary Conditions for Deadlock
+      <br>
+      • 3.2 Handling Deadlocks: Ostrich Algorithm, Deadlock prevention, Safe and Unsafe States, Deadlock Avoidance (Bankers algorithm for Single and Multiple Resource Instances),Deadlock Detection (For Single and Multiple Resource Instances), Recovery From Deadlock (Through Preemption and Rollback)
+    <br></p></a>
+    <br>
+    <a href="pdff/stat4.pdf" ><h3>Unit 4: Memory Management (8 Hrs.)</h3>
+    <p>
+      <br>
+      • 4.1 Introduction: Monoprogramming vs Multi- programming, Modelling Multi-programming, Multiprogramming with fixed and variable partitions, Relocation and Protection.
+      <br>
+      • 4.2 Space Management: Fragmentation and Compaction, Memory management (Bitmaps & Linked-list), Memory Allocation Strategies
+      <br>
+      • 4.3 Virtual Memory: Paging, Page Table, Page Table Structure, Pages and Frames, Handling Page Faults, TLB’s
+      <br>
+      • 4.4 Page Replacement Algorithms: Hit Rate and Miss Rate, Concept of Locality of Reference, FIFO, Belady’s Anomaly, Second Chance, LRU, Optimal, LFU, Clock, WS-Clock.
+      <br>
+      • 4.5 Segmentation: Why Segmentation, Drawbacks of Segmentation, Segmentation with Paging(MULTICS)
+    </p></a>
+    <br>
+    <a href="pdff/stat5.pdf" ><h3>Unit 5: File Management (6 Hrs.)</h3>
+    <p>
+      <br>
+      •  5.1 File Overview: File Naming, File Structure, File Types, File Access, File Attributes, File Operations, Single Level, Two Level and Hierarchical Directory Systems, File System Layout.
+      <br>
+      • 5.2 Implementing Files: Contiguous allocation, Linked List Allocation, Linked List Allocation using Table in Memory/ File Allocation Table, Inodes.
+      <br>
+      • 5.3 Directory: Directory Operations, Path Names, Directory Implementation, Shared Files
+      <br>
+      • 5.4 Free Space Management: Bitmaps, Linked List
+    </p></a>
+    <br>
+    <a href="pdff/stat6.pdf" ><h3>Unit 6: Device Management (6 Hrs.)</h3>
+    <p>
+      <br>
+      • 6.1 Introduction: Classification of IO devices, Controllers, Memory Mapped IO, DMA Operation, Interrupts
+      <br>
+      • 6.2 IO Handling: Goals of IO Software, Handling IO(Programmed IO, Interrupt Driven IO, IO using DMA), IO Software Layers (Interrupt Handlers, Device Drivers)
+      <br>
+      • 6.3 Disk Management: Disk Structure, Disk Scheduling (FCFS, SSTF, SCAN, CSCAN, LOOK, CLOOK), Disk Formatting (Cylinder Skew, Interleaving, Error handling), RAID
+    </p></a>
+    <br>
+    <a href="pdff/stat6.pdf" ><h3>Unit 7: Linux Case Study (5 Hrs.)</h3>
+      <p>
+        <br>
+        • 7.1 History, Kernel Modules, Process Management, Scheduling, Inter-process Communication, Memory Management, File System Management Approaches, Device Management Approaches.
 
-      <hr>
-     
-      <div class="row">
-        <div class="col-md-4 py-3">
-          <div class="card" style="max-width: 18rem;">
-            <!--<img src="img/real.jpg" class="card-img-top" alt="Programming">-->
-            <div class="card-body">
-              <h5 class="card-title">1. Theory of Computation</h5>
-              <p class="card-text">&emsp; CSC262</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 py-3">
-          <div class="card" style="max-width: 18rem;">
-            <!--<img src="img/hacking.png" class="card-img-top" alt="Ethical Hacking">-->
-            <div class="card-body">
-              <h5 class="card-title">2. Computer Networks</h5>
-              <p class="card-text">&emsp; CSC263</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 py-3">
-          <div class="card" style="max-width: 18rem;">
-            <!--<img src="img/man.jpg" class="card-img-top" alt="Stock Market">-->
-            <a href="/1.html" > <!--<img src="1.png" height=80, wide=80 >--></a>
-            <div class="card-body">
-              <a href="/5.html" >
-                <h5 class="card-title">3. Operating System</h5>
-                <p class="card-text">&emsp; CSC264</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 py-3">
-          <div class="card" style="max-width: 18rem;">
-            <!--<img src="img/hacking.png" class="card-img-top" alt="Ethical Hacking">-->
-            <div class="card-body">
-              <h5 class="card-title">4. Database Management &emsp;System</h5>
-              <p class="card-text">&emsp; CSC265</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 py-3">
-          <div class="card" style="max-width: 18rem;">
-            <!--<img src="img/hacking.png" class="card-img-top" alt="Ethical Hacking">-->
-            <div class="card-body">
-              <h5 class="card-title">5. Artificial Intelligence</h5>
-              <p class="card-text">&emsp; CSC266</p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
+      </p></a>
+      <br>
+
     </div>
-  </section>
+  </div>
+</section>
+</u>
 
-  <strong>
     <hr>
-  </strong>
-
-  <u>
-    <section id="questions">
-      <div class="container py-5">
-        <div>
-          <p1>Important questions which are frequently asked :  </p1><br>
-          <p2>we will soon give or update with the important questions. Till then you can visit to pther subjects and study.</p2>
-         </div>
-      </div>
-    </section>
-    </u>
+      <u>
+        <section id="questions">
+          <div class="container py-5">
+            <div>
+              <p1>Important questions which are frequently asked :  </p1><br>
+              <p2>we will soon give or update with the important questions. Till then you can visit to pther subjects and study.</p2>
+            </div>
+          </div>
+        </section>
+      </u>
+<hr>
+  <pre>
+                                      Copyright © 2024 Csit Nepal. All rights reserved.
+                                         Made by Csit Nepal (nikesh-katuwal.com.np)
+  </pre>
   
 </body>
 </html>
